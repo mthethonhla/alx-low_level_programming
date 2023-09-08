@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - program that prints all possible 
+ * main - program that prints all possibl
  *
  * Return: 0 (Success)
  *
