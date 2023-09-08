@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - prints the alphabet in lowercase, followed by a new line all the letters except q and e
+ * main - prints the alphabet in lowercase except q and e
  *
  * Return: 0 (Success)
  *
@@ -13,7 +13,7 @@ int main(void)
 	e = 'e';
 	q = 'q';
 
-	for ( lower = 'a';lower <= 'z'; lower++)
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
 		if (lower != e && lower != q)
 		{
@@ -21,5 +21,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
