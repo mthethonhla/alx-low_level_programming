@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * *argstostr -  concatenates all the arguments of your program
@@ -35,7 +36,7 @@ char *argstostr(int ac, char **av)
 
 	while (av[i])
 	{
-		while (av[i][l])
+		while (av[i][j])
 		{
 			s[k] = av[i][j];
 			k++;
