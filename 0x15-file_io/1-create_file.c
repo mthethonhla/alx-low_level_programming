@@ -5,7 +5,7 @@
  * @filename: filename.
  * @text_content: content writed in the file.
  *
- * Return: 1 on success, -1 on failure 
+ * Return: 1 on success, -1 on failure
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -24,7 +24,8 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 
-	for (nletters = 0; text_content[nletters]; nletters++);
+	for (nletters = 0; text_content[nletters]; nletters++)
+		;
 
 	wr = write(file, text_content, nletters);
 
@@ -34,4 +35,4 @@ int create_file(const char *filename, char *text_content)
 	close(file);
 
 	return (1);
-}	
+}
